@@ -36,7 +36,7 @@ public class Permutation {
 		
 		int[] letters = new int[128]; // Assumption: ASCII
 		for (int i = 0; i < s.length(); i++) {
-			letters[s.charAt(i)]++;
+			letters[s.charAt(i)]++; 
 		}
 		  
 		for (int i = 0; i < t.length(); i++) {
