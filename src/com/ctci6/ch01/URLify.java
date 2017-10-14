@@ -10,10 +10,18 @@ import com.ctci6.utils.AssortedMethods;
  * EXAMPLE
  * Input: "Mr John Smith  "
  * Output: "Mr%20Dohn%20Smith"
+ * 
  * @author Sunil
- *
  */
 public class URLify {
+	
+	public static void main(String[] args) {
+		String str = "Mr John Smith    ";
+		char[] arr = str.toCharArray();
+		int trueLength = findLastCharacter(arr) + 1;
+		replaceSpaces(arr, trueLength);	
+		System.out.println("\"" + AssortedMethods.charArrayToString(arr) + "\"");
+	}
 
 	// Assume string has sufficient free space at the end
 		public static void replaceSpaces(char[] str, int trueLength) {
@@ -46,13 +54,4 @@ public class URLify {
 			}
 			return -1;
 		}
-		
-		public static void main(String[] args) {
-			String str = "Mr John Smith    ";
-			char[] arr = str.toCharArray();
-			int trueLength = findLastCharacter(arr) + 1;
-			replaceSpaces(arr, trueLength);	
-			System.out.println("\"" + AssortedMethods.charArrayToString(arr) + "\"");
-		}
-
 }
