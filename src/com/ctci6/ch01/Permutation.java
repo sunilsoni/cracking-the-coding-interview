@@ -10,7 +10,7 @@ public class Permutation {
 	public static void main(String[] args) {
 		String[][] pairs = {{"apple", "papel"}, {"carrot", "tarroc"}, {"hello", "llloh"}};
 		for (String[] pair : pairs) {
-			String word1 = pair[0];
+			String word1 = pair[0]; 
 			String word2 = pair[1];
 			boolean anagram1 = permutation1(word1, word2);
 			System.out.println(word1 + ", " + word2 + ": " + anagram1);
