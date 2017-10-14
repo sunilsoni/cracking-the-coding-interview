@@ -45,7 +45,7 @@ public class Permutation {
 		
 		for (int i = 0; i < t.length(); i++) {
 			letters[t.charAt(i)]--;
-		    if (letters[t.charAt(i)] < 0) {
+		    if (letters[t.charAt(i)] < 0) {  
 		    	return false;
 		    }
 		}
