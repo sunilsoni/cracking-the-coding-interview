@@ -18,6 +18,7 @@ target
 .gradle
 .DS_Store
 .classpath
+.project
 $tf
 .vagrant
 Vagrantfile
