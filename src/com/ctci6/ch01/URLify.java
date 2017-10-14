@@ -21,7 +21,7 @@ public class URLify {
 		int trueLength = findLastCharacter(arr) + 1;
 		replaceSpaces(arr, trueLength);	
 		System.out.println("\"" + AssortedMethods.charArrayToString(arr) + "\"");
-	}
+	} 
 
 	// Assume string has sufficient free space at the end
 		public static void replaceSpaces(char[] str, int trueLength) {
