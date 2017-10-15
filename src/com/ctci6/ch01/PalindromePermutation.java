@@ -1,13 +1,16 @@
 package com.ctci6.ch01;
 
-import java.util.Arrays;
 
 /**
  * Given a string, write a function to check if it is a permutation of a
  * palindrome. A palindrome is a word or phrase that is the same forwards and
  * backwards. A permutation is a rearrangement of letters. The palindrome does
- * not need to be limited to just dictionary words. Details Example Input: Tact
- * coa Output: True (permutation: “taco cat”, “atco cta”, etc . )
+ * not need to be limited to just dictionary words. 
+ * <p>Details Example:</p> 
+ * <blockquote><pre>
+ * Input: Tact coa 
+ * Output: True (permutation: “taco cat”, “atco cta”, etc . )
+ * </blockquote></pre>
  * 
  * @URL https://www.hackerearth.com/problem/algorithm/palindrome-check-2-1/
  * @author Sunil
@@ -49,12 +52,12 @@ public class PalindromePermutation {
 
 	/* Count how many times each character appears. */
 	public static int[] buildCharFrequencyTable(String phrase) {
-		System.out.println("z getNumericValue-->" + Character.getNumericValue('z'));
-		System.out.println("a getNumericValue-->" + Character.getNumericValue('a'));
+		//System.out.println("z getNumericValue-->" + Character.getNumericValue('z'));
+		//System.out.println("a getNumericValue-->" + Character.getNumericValue('a'));
 		int[] table = new int[Character.getNumericValue('z') - Character.getNumericValue('a') + 1];
 		for (char c : phrase.toCharArray()) {
 			int x = getCharNumber(c);
-			System.out.println(c + "-->" + x);
+			//System.out.println(c + "-->" + x);
 			if (x != -1) {
 				table[x]++;
 			}
@@ -82,7 +85,7 @@ public class PalindromePermutation {
 
 	public static boolean isPermutationOfPalindrome1(String phrase) {
 		int[] table = buildCharFrequencyTable(phrase);
-		System.out.println("table-->" + Arrays.toString(table));// [2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 2, 0, 2, 2, 0, 0,
+		//System.out.println("table-->" + Arrays.toString(table));// [2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 2, 0, 2, 2, 0, 0,
 																// 2, 2, 2, 0, 2, 0, 0, 0, 0]
 		return checkMaxOneOdd(table);
 	}
@@ -97,7 +100,6 @@ public class PalindromePermutation {
 			int x = getCharNumber(c);
 			if (x != -1) {
 				table[x]++;
-
 				if (table[x] % 2 == 1) {
 					countOdd++;
 				} else {
