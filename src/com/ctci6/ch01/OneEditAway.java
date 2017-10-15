@@ -10,6 +10,9 @@ package com.ctci6.ch01;
  * pale, bale -> true
  * pale, bae -> false
  * </pre></blockquote>
+ * 
+ * This algorithm takes 0 (n) time, where n is the length of the shorter string.
+ * 
  * @author Sunil
  */
 public class OneEditAway {
