@@ -30,11 +30,12 @@ public class StringCompression {
 		StringBuilder compressed = new StringBuilder();
 		int countConsecutive = 0;
 		boolean isCompressed=false;
+		System.out.println("size--->"+size);
 		for (int i = 0; i < size; i++) {
 			countConsecutive++;
-			
+			System.out.println("i--->"+i);
 			/* If next character is different than current, append this char to result.*/
-			if (i + 1 >= str.length() || str.charAt(i) != str.charAt(i + 1)) {
+			if (i + 1 >= size || str.charAt(i) != str.charAt(i + 1)) {
 				compressed.append(str.charAt(i));
 				compressed.append(countConsecutive);
 				countConsecutive = 0;
