@@ -13,9 +13,40 @@ package com.ctci6.ch01;
 public class StringCompression {
 
 	public static void main(String[] args) {
-
-
-
+		String str = "b";
+		System.out.println(compress1(str));
+		
+		str = "aa";
+		System.out.println(compress1(str));
 	}
+	
+	public static String compress1(String str) {
+		
+		int size = str==null ? 0 : str.length();
+		if(size==1) {
+			return str;
+		}
+		
+		StringBuilder compressed = new StringBuilder();
+		int countConsecutive = 0;
+		boolean isCompressed=false;
+		for (int i = 0; i < size; i++) {
+			countConsecutive++;
+			
+			/* If next character is different than current, append this char to result.*/
+			if (i + 1 >= str.length() || str.charAt(i) != str.charAt(i + 1)) {
+				compressed.append(str.charAt(i));
+				compressed.append(countConsecutive);
+				countConsecutive = 0;
+				isCompressed=true;
+			}
+		}
+		if(isCompressed) {
+			return compressed.toString();
+		}
+		
+		return  str;
+	}
+	
 
 }
