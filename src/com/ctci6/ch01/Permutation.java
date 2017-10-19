@@ -25,7 +25,7 @@ public class Permutation {
 
 	public static String sort(String s) {
 		char[] content = s.toCharArray();
-		java.util.Arrays.sort(content);
+		Arrays.sort(content);
 		return new String(content);
 	}
 	
