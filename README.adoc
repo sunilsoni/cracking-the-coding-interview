@@ -4,6 +4,6 @@
 
 == https://github.com/sunilsoni/cracking-the-coding-interview/tree/master/src/com/ctci6/ch01[Solutions to Chapter 1: Arrays and Strings]
 
-. https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/IsUniqueChars.java[Is Unique: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?].
+. https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/IsUniqueChars.java[Is Unique::] Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?.
 . 
 . Run the command .
