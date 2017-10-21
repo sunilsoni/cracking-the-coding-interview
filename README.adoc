@@ -26,13 +26,15 @@ Note:: If implementing in Java, please use a character array so that you can per
 
 
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/OneEditAway.java[One Away:] There are three types of edits that can be performed on strings: insert a character, remove a character, or replace a character. Given two strings, write a function to check if they are one edit (or zero edits) away.
-----
+
+[source,java]
+-----------------
 EXAMPLE
 pale, ple -> true
 pales, pale -> true
 pale, bale -> true
 pale, bae -> false
-----
+-----------------
 
 
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/StringCompression.java[String Compression:] Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2blc5a3. If the
