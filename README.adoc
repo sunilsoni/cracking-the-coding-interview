@@ -53,4 +53,4 @@ pale, bae -> false
 e.g., Uwaterbottleu is a rotation of uerbottlewatU.
 -----------------
 
-
+== https://github.com/sunilsoni/cracking-the-coding-interview/tree/master/src/com/ctci6/ch02[Solutions to Chapter 2: Linked List]
