@@ -2,5 +2,5 @@
 
  
 
-== Solutions to Chapter 1: Arrays and Strings<a>https://github.com/sunilsoni/cracking-the-coding-interview/tree/master/src/com/ctci6/ch01</a>
+== [Solutions to Chapter 1: Arrays and Strings]<a>https://github.com/sunilsoni/cracking-the-coding-interview/tree/master/src/com/ctci6/ch01</a>
 
