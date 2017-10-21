@@ -26,13 +26,13 @@ Note:: If implementing in Java, please use a character array so that you can per
 
 
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/OneEditAway.java[One Away:] There are three types of edits that can be performed on strings: insert a character, remove a character, or replace a character. Given two strings, write a function to check if they are one edit (or zero edits) away.
-	----
-	EXAMPLE
-	pale, ple -> true
-	pales, pale -> true
-	pale, bale -> true
-	pale, bae -> false
-	----
+--
+EXAMPLE
+pale, ple -> true
+pales, pale -> true
+pale, bale -> true
+pale, bae -> false
+--
 
 
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/StringCompression.java[String Compression:] Implement a method to perform basic string compression using the counts of repeated characters. For example, the string aabcccccaaa would become a2blc5a3. If the
@@ -43,8 +43,8 @@ Note:: If implementing in Java, please use a character array so that you can per
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/ZeroMatrix.java[Zero Matrix:] Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0
 
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/StringRotation.java[String Rotation:] Assume you have a method i5Substring which checks ifone word is a substring of another. Given two strings, 51 and 52, write code to check if 52 is a rotation of 51 using only one call to isSubstring 
-	----
-	e.g., Uwaterbottleu is a rotation of uerbottlewatU.
-	----
+----
+e.g., Uwaterbottleu is a rotation of uerbottlewatU.
+----
 
 
