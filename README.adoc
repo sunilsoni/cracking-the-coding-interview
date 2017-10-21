@@ -12,7 +12,7 @@ other.
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/URLify.java[*URLify:*] Write a method to replace all spaces in a string with '%2e: You may assume that the string has sufficient space at the end to hold the additional characters, and that you are given the "true" length of the string. 
 Note:: If implementing in Java, please use a character array so that you can perform this operation in place.
 
-	[source,java]
+[source,java]
 -----------------
 	EXAMPLE
 	Input: "Mr John Smith JJ, 13  "
@@ -20,11 +20,12 @@ Note:: If implementing in Java, please use a character array so that you can per
 -----------------
 
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/PalindromePermutation.java[*Palindrome Permutation:*] Given a string, write a function to check if it is a permutation of a palindrome. A palindrome is a word or phrase that is the same forwards and backwards. A permutation is a rearrangement of letters. The palindrome does not need to be limited to just dictionary words.
-	----
+[source,java]
+-----------------
 	EXAMPLE
 	Input: Tact Coa
 	Output: True (permutations:"taco cat'; "atco cta'; etc.)
-	----
+-----------------
 
 
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/OneEditAway.java[*One Away:*] There are three types of edits that can be performed on strings: insert a character, remove a character, or replace a character. Given two strings, write a function to check if they are one edit (or zero edits) away.
@@ -47,8 +48,9 @@ pale, bae -> false
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/ZeroMatrix.java[*Zero Matrix:*] Write an algorithm such that if an element in an MxN matrix is 0, its entire row and column are set to 0
 
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/StringRotation.java[*String Rotation:*] Assume you have a method i5Substring which checks ifone word is a substring of another. Given two strings, 51 and 52, write code to check if 52 is a rotation of 51 using only one call to isSubstring 
-----
+[source,java]
+-----------------
 e.g., Uwaterbottleu is a rotation of uerbottlewatU.
-----
+-----------------
 
 
