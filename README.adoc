@@ -5,5 +5,15 @@
 == https://github.com/sunilsoni/cracking-the-coding-interview/tree/master/src/com/ctci6/ch01[Solutions to Chapter 1: Arrays and Strings]
 
 . https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/IsUniqueChars.java[Is Unique:] Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?.
-. 
-. Run the command .
+
+. https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/Permutation.java[Check Permutation:] Given two strings, write a method to decide if one is a permutation of the
+other.
+
+. https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch01/URLify.java[URLify:] Write a method to replace all spaces in a string with '%2e: You may assume that the string
+has sufficient space at the end to hold the additional characters, and that you are given the "true"
+length of the string. (Note: if implementing in Java, please use a character array so that you can
+perform this operation in place.)
+
+EXAMPLE
+Input: "Mr John Smith JJ, 13  "
+Output: "Mr%2eJohn%2eSmith"
