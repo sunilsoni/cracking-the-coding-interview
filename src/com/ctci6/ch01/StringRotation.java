@@ -3,7 +3,7 @@ package com.ctci6.ch01;
 /**
  * Assume you have a method i5Substring which checks ifone word is a substring of another.
  * Given two strings, 51 and 52, write code to check if 52 is a rotation of 51 using only one call to isSubstring:
- * <blockquote><pre>e.g., Uwaterbottleuis a rotation ofuerbottlewatU.</blockquote></pre>
+ * <blockquote><pre>e.g., "Uwaterbottleu" is a rotation of "uerbottlewatU".</blockquote></pre>
  * 
  * @author Sunil
  */
