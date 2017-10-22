@@ -93,12 +93,9 @@ public class RemoveDups {
 				runner = runner.next;
 			}
 			
-			/* If runner == current, then we didn't find any duplicate 
-			 * elements in the previous for loop.  We then need to 
-			 * increment current.  
-			 * If runner != current, then we must have hit the �break� 
-			 * condition, in which case we found a dup and current has
-			 * already been incremented.*/
+			/* If runner == current, then we didn't find any duplicate elements in the previous for loop.  We then need to increment current.  
+			 * If runner != current, then we must have hit the break condition, in which case we found a dup and current has already been incremented.
+			 */
 			if (runner == current) {
 				previous = current;
 		        current = current.next;
