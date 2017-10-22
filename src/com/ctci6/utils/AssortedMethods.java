@@ -50,8 +50,7 @@ public class AssortedMethods {
 	}
 
 	public static LinkedListNode randomLinkedList(int N, int min, int max) {
-		LinkedListNode root = new LinkedListNode(randomIntInRange(min, max),
-				null, null);
+		LinkedListNode root = new LinkedListNode(randomIntInRange(min, max),null, null);
 		LinkedListNode prev = root;
 		for (int i = 1; i < N; i++) {
 			int data = randomIntInRange(min, max);
