@@ -32,7 +32,7 @@ public class DeleteMiddleNode {
 		if (n == null || n.next == null) {
 			return false; // Failure
 		} 
-		LinkedListNode next = n.next; 
+		LinkedListNode next = n.next;
 		n.data = next.data; 
 		n.next = next.next; 
 		return true;
