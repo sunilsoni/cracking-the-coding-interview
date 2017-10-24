@@ -19,15 +19,16 @@ public class ReturnKthToLast {
 		for (int i = 0; i <= array.length + 1; i++) {
 			printKthToLast(head, i);
 		}
-		
+		System.out.println();
+		System.out.println("-----Approach C: Create a Wrapper Class.----");
 		//Approach C: Create a Wrapper Class.
 		for (int i = 0; i <= array.length + 1; i++) {
 			LinkedListNode node = kthToLast(head, i);
 			String nodeValue = node == null ? "null" : "" + node.data;
 			System.out.println(i + ": " + nodeValue);
 		}
-		
-		
+		System.out.println();
+		System.out.println("-----Solution #3: Iterative----");
 		//Solution #3: Iterative
 		for (int i = 0; i <= array.length + 1; i++) {
 			LinkedListNode node = nthToLast(head, i);
