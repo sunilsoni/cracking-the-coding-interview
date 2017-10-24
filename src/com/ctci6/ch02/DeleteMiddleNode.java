@@ -1,5 +1,8 @@
 package com.ctci6.ch02;
 
+import com.ctci6.utils.AssortedMethods;
+import com.ctci6.utils.LinkedListNode;
+
 /**
  * Implement an algorithm to delete a node in the middle (Le., any node but the first and last node, not necessarily the exact middle) 
  * of a singly linked list, given only access to that node.
@@ -12,5 +15,23 @@ package com.ctci6.ch02;
  * @author Sunil
  */
 public class DeleteMiddleNode {
-
+	
+	public static void main(String[] args) {
+		LinkedListNode head = AssortedMethods.randomLinkedList(10, 0, 10);
+		System.out.println(head.printForward());
+		deleteNode(head.next.next.next.next); // delete node 4
+		System.out.println(head.printForward());
+	}
+	
+	public static boolean deleteNode(LinkedListNode n) {
+		if (n == null || n.next == null) {
+			return false; // Failure
+		} 
+		LinkedListNode next = n.next; 
+		n.data = next.data; 
+		n.next = next.next; 
+		return true;
+	}
+	
+	
 }
