@@ -23,6 +23,11 @@ public class DeleteMiddleNode {
 		System.out.println(head.printForward());
 	}
 	
+	/*
+	 * In this problem, you are not given access to the head of the linked list. You only have access to that node.
+	 * The solution is simply to copy the data from the next node over to the current node, and then to delete the next node.
+	 * Note that this problem cannot be solved if the node to be deleted is the last node in the linked list. 
+	 */
 	public static boolean deleteNode(LinkedListNode n) {
 		if (n == null || n.next == null) {
 			return false; // Failure
@@ -32,6 +37,5 @@ public class DeleteMiddleNode {
 		n.next = next.next; 
 		return true;
 	}
-	
 	
 }
