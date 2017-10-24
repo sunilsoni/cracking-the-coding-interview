@@ -10,7 +10,6 @@ package com.ctci6.ch02;
  * </blockquote></pre>
 
  * @author Sunil
- *
  */
 public class DeleteMiddleNode {
 
