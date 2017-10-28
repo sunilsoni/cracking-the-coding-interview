@@ -34,6 +34,7 @@ public class Partition {
 		System.out.println(h.printForward());
 	}
 	
+	/* Pass in the head of the linked list and the value to partition around */
 	public static LinkedListNode partition(LinkedListNode node, int x) {
 		LinkedListNode beforeStart = null;
 		LinkedListNode beforeEnd = null;
@@ -45,6 +46,7 @@ public class Partition {
 			LinkedListNode next = node.next;
 			node.next = null;
 			if (node.data < x) {
+				/* Insert node into end of before list */
 				if (beforeStart == null) {
 					beforeStart = node;
 					beforeEnd = beforeStart;
@@ -53,6 +55,7 @@ public class Partition {
 					beforeEnd = node;
 				}
 			} else {
+				/* Insert node into end of after list */
 				if (afterStart == null) {
 					afterStart = node;
 					afterEnd = afterStart;
