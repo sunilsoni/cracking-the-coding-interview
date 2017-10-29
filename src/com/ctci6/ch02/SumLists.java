@@ -46,6 +46,21 @@ public class SumLists {
 		System.out.print(l1 + " + " + l2 + " = " + (l1 + l2));		
 	}
 	
+	/** <p>Let's walk through this for the below linked list:</p>
+	 *  <blockquote><pre>   7 -> 1 -> 6
+	 * + 5 -> 9 -> 2</blockquote></pre>
+	 * 
+	 * <p>We do the following:</p>
+	 * 
+	 *<p>1. We add 7 and 5 first, getting a result of 12. 2 becomes the first node in our linked list, and we "carry" the 1 to the next sum.</p>
+	 *   List: 2 -> ?
+
+	 *<p>2. We then add 1 and 9, as well as the "carry;' getting a result of 11 . 1 becomes the second element of our linked list, and we carry the 1 to the next sum.</p>
+	 *   List: 2 -> 1 -> ?
+
+	 *<p>3. Finally, we add 6, 2 and our "carry;' to get 9. This becomes the final element of our linked list.</p>
+	 *   List: 2 - > 1 - > 9.
+	 */
 	private static LinkedListNode addLists(LinkedListNode l1, LinkedListNode l2, int carry) {
 		if (l1 == null && l2 == null && carry == 0) {
              return null;
