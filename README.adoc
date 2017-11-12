@@ -104,6 +104,8 @@ Output: 9 - > 1 - > 2.That is, 912.
 -----------------
 
 
+* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch02/Palindrome.java[*Palindrome:*] 
+Implement a function to check if a linked list is a palindrome.
 
 
 
