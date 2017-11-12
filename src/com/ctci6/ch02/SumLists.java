@@ -39,12 +39,12 @@ public class SumLists {
 	public static void main(String[] args) {
 		LinkedListNode lA1 = new LinkedListNode(9, null, null);
 		System.out.println("lA1  :  " + lA1.printForward());
-		LinkedListNode lA2 = new LinkedListNode(9, null, lA1);
-		LinkedListNode lA3 = new LinkedListNode(9, null, lA2);
+		LinkedListNode lA2 = new LinkedListNode(8, null, lA1);
+		LinkedListNode lA3 = new LinkedListNode(7, null, lA2);
 
 		LinkedListNode lB1 = new LinkedListNode(1, null, null);
-		LinkedListNode lB2 = new LinkedListNode(0, null, lB1);
-		LinkedListNode lB3 = new LinkedListNode(0, null, lB2);
+		LinkedListNode lB2 = new LinkedListNode(2, null, lB1);
+		LinkedListNode lB3 = new LinkedListNode(3, null, lB2);
 
 		
 		System.out.println("lA1  :  " + lA1.printForward());
@@ -157,15 +157,21 @@ public class SumLists {
 		/* Add smaller digits recursively */
 		PartialSum sum = addListsHelper1(l1.next, l2.next);
 		
+		
 		/* Add carry to current data */
 		int val = sum.carry + l1.data + l2.data;
+		System.out.println("val-->"+val);
 		
 		/* Insert sum of current digits */
 		LinkedListNode full_result = insertBefore(sum.sum, val % 10);
+		System.out.println("full_result-->"+full_result.printForward());
 		
 		/* Return sum so far, and the carry value */
 		sum.sum = full_result;
 		sum.carry = val / 10;
+		System.out.println("sum.sum-->"+full_result.printForward());
+		System.out.println("sum.carry-->"+sum.carry);
+		System.out.println("----");
 		return sum;
 	}
 	
@@ -225,4 +231,6 @@ public class SumLists {
 class PartialSum {
 	public LinkedListNode sum = null;
 	public int carry = 0;
+	
+	
 }
