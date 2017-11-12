@@ -113,6 +113,7 @@ public class Palindrome {
 	}
 
 	public static Result isPalindromeRecurse(LinkedListNode head, int length) {
+		System.out.println("---Starting isPalindromeRecurse ---");
 		if (head == null || length <= 0) { // Even number of nodes
 			return new Result(head, true);
 		} else if (length == 1) { // Odd number of nodes
@@ -122,8 +123,7 @@ public class Palindrome {
 		/* Recurse on sublist. */
 		Result res = isPalindromeRecurse(head.next, length - 2);
 		
-		/* If child calls are not a palindrome, pass back up 
-		 * a failure. */
+		/* If child calls are not a palindrome, pass back up a failure. */
 		if (!res.result || res.node == null) {
 			return res;
 		}
@@ -133,7 +133,7 @@ public class Palindrome {
 		
 		/* Return corresponding node. */
 		res.node = res.node.next;
-		
+		System.out.println("---Ending isPalindromeRecurse ---");
 		return res;
 	}
 	
