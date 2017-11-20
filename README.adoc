@@ -114,11 +114,10 @@ Given two (singly) linked lists, determine if the two lists intersect. Return th
 linked list, then they are intersecting.
 
 * https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch02/LoopDetection.java[*Loop Detection:*] 
-Given a circular linked list, implement an algorithm that returns the node at the
-beginning of the loop.
+Given a circular linked list, implement an algorithm that returns the node at the beginning of the loop.
+
 DEFINITION
-Circular linked list: A (corrupt) linked list in which a node's next pointer points to an earlier node, so
-as to make a loop in the linked list.
+Circular linked list: A (corrupt) linked list in which a node's next pointer points to an earlier node, so as to make a loop in the linked list.
 
 [source,java]
 -----------------
