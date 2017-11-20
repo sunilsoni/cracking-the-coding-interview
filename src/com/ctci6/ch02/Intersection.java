@@ -8,6 +8,8 @@ import com.ctci6.utils.LinkedListNode;
  * Note that the intersection is defined based on reference, not value. 
  * That is, if the kth node of the first linked list is the exact same node (by reference) as the jth node of the second linked list, 
  * then they are intersecting
+ * @Time: O(A + B)
+ * @Space:  O(1)
  * 
  * @author Sunil
  */
@@ -17,13 +19,15 @@ public class Intersection {
 		/* Create linked list */
 		int[] vals = {-1, -2, 0, 1, 2, 3, 4, 5, 6, 7, 8};
 		LinkedListNode list1 = AssortedMethods.createLinkedListFromArray(vals);
+		System.out.println("list1--->"+list1.printForward());
 		
 		int[] vals2 = {12, 14, 15};
 		LinkedListNode list2 = AssortedMethods.createLinkedListFromArray(vals2);
+		//System.out.println("list2---->"+list2.printForward());
 		
 		list2.next.next = list1.next.next.next.next;
 		
-		System.out.println(list1.printForward());
+		//System.out.println(list1.printForward());
 		System.out.println(list2.printForward());
 		
 		
@@ -81,12 +85,15 @@ public class Intersection {
 		
 		/* Advance the pointer for the longer linked list by the difference in lengths. */
 		longer = getKthNode(longer, Math.abs(result1.size - result2.size));
+		System.out.println("longer1--->"+longer.printForward());
 		
 		/* Move both pointers until you have a collision. */
 		while (shorter != longer) {
 			shorter = shorter.next;
 			longer = longer.next;
 		}
+		System.out.println("shorter--->"+shorter.printForward());
+		System.out.println("longer2--->"+longer.printForward());
 		
 		/* Return either one. */
 		return longer; 
