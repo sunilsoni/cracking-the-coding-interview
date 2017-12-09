@@ -131,7 +131,26 @@ Output:C
 == https://github.com/sunilsoni/cracking-the-coding-interview/tree/master/src/com/ctci6/ch03[Solutions to Chapter 3: Stacks and Queues]
 
 * https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/ThreeInOneFixedMultiStack.java[*Three In One: Fixed Multi Stack*] 
-Describe how you could use a single array to implement three stacks.
+Describe how you could use a single array to implement three stacks:
+
+[source,java]
+-----------------
+Approach 1: Fixed Division
+We can divide the array in three equal parts and allow the individual stack to grow in that limited space.
+Note: We will use the notation "[" to mean inclusive of an end point and "(" to mean exclusive of an end
+point.
+For stack 1, we will use [0, X).
+For stack 2, we will use [ X, 2X) .
+For stack 3, we will use [ 2X , n) .
+-----------------
 
 * https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/ThreeInOneMultiStack.java[*Three In One: Multi Stack*] 
 Describe how you could use a single array to implement three stacks.
+
+[source,java]
+-----------------
+Approach 2: Flexible Divisions
+A second approach is to allow the stack blocks to be flexible in size. When one stack exceeds its initial
+capacity, we grow the allowable capacity and shift elements as necessary.
+-----------------
+
