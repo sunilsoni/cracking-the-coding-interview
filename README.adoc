@@ -130,5 +130,8 @@ Output:C
 
 == https://github.com/sunilsoni/cracking-the-coding-interview/tree/master/src/com/ctci6/ch03[Solutions to Chapter 3: Stacks and Queues]
 
-* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/ThreeInOne.java[*Three In One:*] 
+* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/ThreeInOneFixedMultiStack.java[*Three In One: Fixed Multi Stack*] 
+Describe how you could use a single array to implement three stacks.
+
+* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/ThreeInOneMultiStack.java[*Three In One: Multi Stack*] 
 Describe how you could use a single array to implement three stacks.
