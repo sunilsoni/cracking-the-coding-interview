@@ -68,7 +68,7 @@ public class ThreeInOneMultiStack {
 	/* StackInfo is a simple class that holds a set of data about 
 	 * each stack. It does not hold the actual items in the stack. 
 	 * We could have done this with just a bunch of individual 
-	 * variables, but that’s messy and doesn’t gain us much. */
+	 * variables, but thats messy and doesn't gain us much. */
 	private class StackInfo {
 		public int start, size, capacity;
 		public StackInfo(int start, int capacity) {
