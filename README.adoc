@@ -154,3 +154,10 @@ A second approach is to allow the stack blocks to be flexible in size. When one 
 capacity, we grow the allowable capacity and shift elements as necessary.
 -----------------
 
+* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/StackWithMin.java[*Stack Min:*] 
+How would you design a stack which, in addition to push and pop, has a function min which returns the minimum element? Push, pop and min should all operate in 0(1) time.
+
+
+
+
+
