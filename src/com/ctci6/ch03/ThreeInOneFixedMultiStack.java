@@ -22,6 +22,7 @@ public class ThreeInOneFixedMultiStack {
 		printStacks(stacks);
 		stacks.push(2, 30);
 		printStacks(stacks);
+		System.out.println("------------------");
 		
 		stacks.push(1, 21);
 		printStacks(stacks);
@@ -29,22 +30,27 @@ public class ThreeInOneFixedMultiStack {
 		printStacks(stacks);
 		stacks.push(0, 12);
 		printStacks(stacks);
+		System.out.println("------------------");
 		
 		stacks.pop(0);
 		printStacks(stacks);
+		System.out.println("------------------");
 		
 		stacks.push(2, 31);
 		printStacks(stacks);
+		System.out.println("------------------");
 		
 		stacks.push(0, 13);
 		printStacks(stacks);
 		stacks.push(1, 22);
 		printStacks(stacks);
+		System.out.println("------------------");
 		
 		stacks.push(2, 31);
 		printStacks(stacks);
 		stacks.push(2, 32);
 		printStacks(stacks);
+		System.out.println("------------------");
 	}
 	
 	
