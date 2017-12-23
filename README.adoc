@@ -154,10 +154,26 @@ A second approach is to allow the stack blocks to be flexible in size. When one 
 capacity, we grow the allowable capacity and shift elements as necessary.
 -----------------
 
-* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/StackWithMin.java[*Stack Min:*] 
+* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/StackWithMin.java[*Stack Min 1:*] 
 How would you design a stack which, in addition to push and pop, has a function min which returns the minimum element? Push, pop and min should all operate in 0(1) time.
 
+[source,java]
+-----------------
+Approach 1: One solution is to have just a single int value, minValue, that's a member of the Stack class. When
+minValue is popped from the stack, we search through the stack to find the new minimum. Unfortunately,
+this would break the constraint that push and pop operate in 0(1) time.
+-----------------
 
+* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/StackWithMin2.java[*Stack Min 2:*] 
+How would you design a stack which, in addition to push and pop, has a function min which returns the minimum element? Push, pop and min should all operate in 0(1) time.
 
+[source,java]
+-----------------
+Approach 2: We can (maybe) do a bit better than this by using an additional stack which keeps track of the mins.
+Why might this be more space efficient? Suppose we had a very large stack and the first element inserted
+happened to be the minimum. In the first solution, we would be keeping n integers, where n is the size of
+the stack. In the second solution though, we store just a few pieces of data: a second stack with one element
+and the members within this stack.
+-----------------
 
 
