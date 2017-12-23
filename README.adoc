@@ -176,6 +176,9 @@ the stack. In the second solution though, we store just a few pieces of data: a 
 and the members within this stack.
 -----------------
 
-* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/StackWithMin2.java[*Stack Min 2:*]
-How would you design a stack which, in addition to push and pop, has a function min which returns the minimum element? Push, pop and min should all operate in 0(1) time.
+* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/SetOfStacks.java[*Stack of Plates:*]
+Imagine a (literal) stack of plates. If the stack gets too high, it might topple. Therefore, in real life, we would likely start a new stack when the previous stack exceeds some
+threshold. Implement a data structure SetOfStacks that mimics this. SetOfStacks should be composed of several stacks and should create a new stack once the previous one exceeds capacity.
+SetOfStacks.push() and SetOfStacks. pop() should behave identically to a single stack (that is, pop() should return the same values as it would if there were just a single stack).
 
+FOLLOW UP ::Implement a function popAt(int index) which performs a pop operation on a specifc substack.
