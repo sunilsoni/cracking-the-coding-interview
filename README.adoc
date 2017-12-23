@@ -176,4 +176,6 @@ the stack. In the second solution though, we store just a few pieces of data: a 
 and the members within this stack.
 -----------------
 
+* https://github.com/sunilsoni/cracking-the-coding-interview/blob/master/src/com/ctci6/ch03/StackWithMin2.java[*Stack Min 2:*]
+How would you design a stack which, in addition to push and pop, has a function min which returns the minimum element? Push, pop and min should all operate in 0(1) time.
 
