@@ -13,7 +13,7 @@ public class StackWithMin extends Stack<NodeWithMin> {
 
 	public static void main(String[] args) {
 		StackWithMin stack = new StackWithMin();
-		int[] array = {2, 1, 3, 1};
+		int[] array = {2, 1, 3, 1};  
 		for (int value : array) {
 			stack.push(value);
 			System.out.print(value + ", ");
