@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class StackWithMin2 extends Stack<Integer> {
 	private static final long serialVersionUID = 1L;
-	
+
 	public static void main(String[] args) {
 		StackWithMin stack = new StackWithMin();
 		StackWithMin2 stack2 = new StackWithMin2();

@@ -9,7 +9,7 @@ package com.ctci6.ch01;
  * <p>Details Example:</p> 
  * <blockquote><pre>
  * Input: Tact coa 
- * Output: True (permutation: “taco cat”, “atco cta”, etc . )
+ * Output: True (permutation: "taco cat", "atco cta", etc . )
  * </blockquote></pre>
  * 
  * @URL https://www.hackerearth.com/problem/algorithm/palindrome-check-2-1/
