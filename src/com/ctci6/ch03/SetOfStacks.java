@@ -23,7 +23,6 @@ public class SetOfStacks {
     public SetOfStacks(int capacity) {
         this.capacity = capacity;
     }
-
     public static void main(String[] args) {
         int capacity_per_substack = 5;
         SetOfStacks set = new SetOfStacks(capacity_per_substack);

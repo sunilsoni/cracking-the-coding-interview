@@ -1,6 +1,7 @@
 package com.ctci6.ch03;
 
 import java.util.EmptyStackException;
+import java.util.Objects;
 
 public class Stack {
     public Node top;
@@ -49,6 +50,33 @@ public class Stack {
         if (bottom != null) bottom.below = null;
         size--;
         return b.value;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Stack stack = (Stack) o;
+        return size == stack.size &&
+                capacity == stack.capacity &&
+                Objects.equals(top, stack.top) &&
+                Objects.equals(bottom, stack.bottom);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(top, bottom, size, capacity);
+    }
+
+    @Override
+    public String toString() {
+        return "Stack{" +
+                "top=" + top +
+                ", bottom=" + bottom +
+                ", size=" + size +
+                ", capacity=" + capacity +
+                '}';
     }
 }
 
