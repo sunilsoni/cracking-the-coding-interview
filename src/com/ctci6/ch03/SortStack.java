@@ -28,6 +28,24 @@ public class SortStack {
         }
     }
 
+    public static void sort(Stack<Integer> s) {
+        Stack<Integer> r = new Stack<Integer>();
+        while(!s.isEmpty()) {
+            /* Insert each element in s in sorted order into r. */
+            int tmp = s.pop();
+            while(!r.isEmpty() && r.peek() > tmp) {
+                s.push(r.pop());
+            }
+            r.push(tmp);
+        }
+
+        /* Copy the elements back. */
+        while (!r.isEmpty()) {
+            s.push(r.pop());
+        }
+    }
+
+
     public static Stack<Integer> mergesort(Stack<Integer> inStack) {
         if (inStack.size() <= 1) {
             return inStack;
@@ -68,22 +86,6 @@ public class SortStack {
         return reverseStack;
     }
 
-    public static void sort(Stack<Integer> s) {
-        Stack<Integer> r = new Stack<Integer>();
-        while(!s.isEmpty()) {
-            /* Insert each element in s in sorted order into r. */
-            int tmp = s.pop();
-            while(!r.isEmpty() && r.peek() > tmp) {
-                s.push(r.pop());
-            }
-            r.push(tmp);
-        }
-
-        /* Copy the elements back. */
-        while (!r.isEmpty()) {
-            s.push(r.pop());
-        }
-    }
 
 
 
