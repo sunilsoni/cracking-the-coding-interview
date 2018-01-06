@@ -1,10 +1,10 @@
 package com.ctci6.ch03;
 
 import com.ctci6.utils.AssortedMethods;
-
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
+
 /**
  * Implement a MyQueue class which implements a queue using two stacks.
  *
@@ -15,7 +15,6 @@ public class QueueViaStack<T> {
 
     public static void main(String[] args) {
         QueueViaStack<Integer> my_queue = new QueueViaStack<Integer>();
-
         // Let's test our code against a "real" queue
         Queue<Integer> test_queue = new LinkedList<Integer>();
 
